@@ -1,0 +1,79 @@
+html {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkL81DdQdugAptb9zsswqYgn2SW-_jq9oHdxzNKtkM6Xgf1rvtehsNv-nXaN-00FJvbNE&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Helvetica;
+  line-space: 1.5;
+}
+.text-heading {
+  color: #fefbd8;
+  text-align: center;
+}
+#textarea {
+  height: 50px;
+  border-color: #034f84;
+  border-radius: 8px;
+  border-width: 2px;
+}
+#name,
+#email,
+#number,
+#dropdown,
+input,
+button,
+select,
+textarea {
+  border-color: #034f84;
+  border-radius: 6px;
+  border-width: 2px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+::placeholder {
+  font-size: inherit;
+}
+input {
+  font-sixe: 20px;
+}
+#survey-form {
+  margin: 25px 400px 75px 400px;
+  padding: 25px 60px 75px 50px;
+  border: 10px solid #92a8d1;
+  background-color: #fefbd8;
+}
+
+label {
+  line-height: 1.5;
+}
+#title {
+  text-align: center;
+  font-size: 40px;
+}
+
+#discription {
+  text-align: center;
+}
+
+.form-group {
+  line-height: 2.25;
+  color: #034f84;
+  font-weight: bold;
+}
+
+.form-control {
+  padding: inherit;
+  border-color: #034f84;
+  display: block;
+  width: 100%;
+}
+form {
+  display: block;
+  border-width: 10px;
+  padding: 2.5rem 0.625rem;
+  border-radius: 15px;
+}
+#dropdown {
+  display: block;
+  height: 100%;
+}
