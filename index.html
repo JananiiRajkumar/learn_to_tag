@@ -10,12 +10,7 @@
 <!-- partial:index.partial.html -->
 <html>
 <head>
-  <script>
-    var role = getElementsByName("role")[0].value()
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-      'role':role
-    });
+
   </script>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -85,6 +80,13 @@
         <label id="textarea" for="comments">Any comments or suggestions </label>
         <textarea type="textarea" id="textarea" class="input-textarea form-control" placeholder="Enter your comments here...."></textarea>
       </div>
+        <script>
+        var role = getElementsByName("role")[0].value()
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+        'role':role
+        });
+      
       <div class="form-group">
         <button type="submit" id="submit" class="submit-button">
           Submit
