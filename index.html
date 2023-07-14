@@ -39,10 +39,9 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
            <script>
         function datalayer() {
-        window.dataLayer = window.dataLayer || [];
-        var role = getElementsByName("role")[0].value();
+        window.dataLayer = window.dataLayer || []; 
         window.dataLayer.push({
-        'role': role
+        'role': getElementsByName("role")[0].value();
         });
         }
        </script>
