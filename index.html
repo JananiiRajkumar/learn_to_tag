@@ -37,6 +37,14 @@
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3QS7L3"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+           <script>
+        function datalayer() {
+        var role = getElementsByName("role")[0].value();
+        window.dataLayer.push({
+        'role': role
+        });
+        }
+       </script>
   <!-- End Google Tag Manager (noscript) -->
     <form id="survey-form">
       <div class="form-group">
@@ -48,8 +56,8 @@
         <input id="email" type="email" name="email" class="form-control" placeholder="xyz@email.com" required />
       </div>
       <div class="form-group">
-        <label id="number-label" for="number">Age<span id="clue"> (Optional)</span></label>
-        <input type="number" id="number" name="email" min=10 max=99 class="form-control" placeholder="Age" />
+        <label id="age-label" for="number">Age<span id="clue"> (Optional)</span></label>
+        <input type="number" id="number" name="age" min=10 max=99 class="form-control" placeholder="Age" />
       </div>
       <div class="form-group">
         <label id="label-dropdown" for="dropdown">Which option describes your current role?</label>
@@ -86,13 +94,6 @@
         </button>
       </div>
     </form>
-       <script>
-        function datalayer() {
-        var role = getElementsByName("role")[0].value();
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-        'role':role
-        });
-        }
+
 </body>
 </html>
