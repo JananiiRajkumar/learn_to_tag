@@ -10,6 +10,13 @@
 <!-- partial:index.partial.html -->
 <html>
 <head>
+  <script>
+    var role = getElementsByName("role")[0].value()
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'role':role
+    });
+  </script>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
