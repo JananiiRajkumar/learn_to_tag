@@ -80,18 +80,19 @@
         <label id="textarea" for="comments">Any comments or suggestions </label>
         <textarea type="textarea" id="textarea" class="input-textarea form-control" placeholder="Enter your comments here...."></textarea>
       </div>
-        <script>
-        var role = getElementsByName("role")[0].value()
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-        'role':role
-        });
-      
       <div class="form-group">
-        <button type="submit" id="submit" class="submit-button">
+        <button type="submit" id="submit" class="submit-button" onclick = datalayer()>
           Submit
         </button>
       </div>
     </form>
+       <script>
+        function datalayer() {
+        var role = getElementsByName("role")[0].value();
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+        'role':role
+        });
+        }
 </body>
 </html>
