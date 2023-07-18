@@ -38,13 +38,7 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3QS7L3"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script>
-  function datalayerpush() {
-  /*window.dataLayer = window.dataLayer || []; 
-  dataLayer.push({
-  'role': getElementsByName("role")[0].value();
-  });*/
-    window.alert(getElementsByName("role")[0].value());
-  } 
+  window.dataLayer = window.dataLayer || []; 
   </script>
   <!-- End Google Tag Manager (noscript) -->
     <form id="survey-form">
@@ -90,7 +84,7 @@
         <textarea type="textarea" id="textarea" class="input-textarea form-control" placeholder="Enter your comments here...."></textarea>
       </div>
       <div class="form-group">
-        <button type="submit" id="submit" class="submit-button" onclick = "datalayerpush()">
+        <button type="submit" id="submit" class="submit-button" onclick = "dataLayer.push({"role": "doctor"})">
           Submit
         </button>
       </div>
